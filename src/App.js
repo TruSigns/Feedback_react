@@ -12,8 +12,6 @@ import AboutIconLinkIcon from "./components/AboutIconLinkIcon";
 import { FeedbackProvider } from "./context/FeedbackContext";
 
 function App() {
-  const [feedback, setFeedBack] = useState(feedBackData);
-
   return (
     <FeedbackProvider>
       <Router>
@@ -41,3 +39,9 @@ function App() {
 }
 
 export default App;
+
+// useEffect(() => {
+//   setSelect(feedbackEdit.item.rating);
+// }, [feedbackEdit]);
+
+// NOTE: simplified wi
